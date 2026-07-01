@@ -31,18 +31,31 @@
       color: #4a433f;
     }
 
-    .fridge-container {
-      width: 80%;
-      max-width: 900px;
-      height: 600px;
-      margin: 60px auto;
-      background: #fffdf8;
-      border: 3px solid #8b162b;
-      outline: 6px solid rgba(139, 22, 43, 0.08);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-      position: relative;
-      overflow: hidden;
-    }
+.fridge-container {
+  width: 80%;
+  max-width: 900px;
+  height: 600px;
+  margin: 60px auto;
+
+  background: #fffdf8;
+
+  border-radius: 18px;
+
+  /* real separation from page */
+  border: 1px solid rgba(0,0,0,0.08);
+
+  /* MUCH stronger depth */
+  box-shadow:
+    0 40px 100px rgba(0,0,0,0.25),
+    0 10px 20px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+
+  position: relative;
+  overflow: hidden;
+
+  /* subtle lift effect */
+  transform: translateY(-2px);
+}
 
     .hint {
       position: absolute;
