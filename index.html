@@ -4,57 +4,79 @@
   <meta charset="UTF-8">
   <title>Libby Blooms</title>
 
-  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Kalam&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      background: #f6f3cf; /* butter cream */
-      color: #4a433f; /* soft charcoal */
+      background: #f6f3cf;
       font-family: 'Cormorant Garamond', serif;
+      color: #4a433f;
     }
 
     .title {
       text-align: center;
-      font-size: 60px;
-      margin-top: 80px;
-      color: #8b162b; /* deep cherry */
-      letter-spacing: 2px;
+      font-size: 64px;
+      margin-top: 60px;
+      color: #8b162b;
     }
 
     .subtitle {
       text-align: center;
       font-family: 'Kalam', cursive;
-      font-size: 20px;
       margin-top: 10px;
-      color: #4a433f;
+      font-size: 18px;
     }
 
-.fridge-container {
-  width: 80%;
-  max-width: 900px;
-  height: 600px;
-  margin: 60px auto;
+    /* FRIDGE */
+    .fridge-container {
+      width: 80%;
+      max-width: 900px;
+      height: 600px;
+      margin: 50px auto;
 
-  background: #fffdf8;
+      background: #fffdf8;
 
-  border-radius: 18px;
-  border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 18px;
+      border: 1px solid rgba(0,0,0,0.08);
 
-  box-shadow:
-    0 40px 100px rgba(0,0,0,0.20),
-    inset 0 1px 0 rgba(255,255,255,0.8);
+      box-shadow:
+        0 40px 100px rgba(0,0,0,0.20),
+        inset 0 1px 0 rgba(255,255,255,0.8);
 
-  position: relative;
-  overflow: hidden;
+      position: relative;
+      overflow: hidden;
 
-  padding: 20px;
-}
+      padding: 20px;
+    }
 
-.sticky-note:hover {
-  transform: rotate(-4deg) scale(1.05);
-}
+    /* STICKY NOTE */
+    .sticky-note {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+
+      background: #f9b6b8;
+      padding: 14px 16px;
+
+      font-family: 'Kalam', cursive;
+      font-size: 16px;
+
+      transform: rotate(-3deg);
+
+      border-radius: 6px;
+
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+
+      cursor: pointer;
+
+      transition: transform 0.2s ease;
+    }
+
+    .sticky-note:hover {
+      transform: rotate(-3deg) scale(1.05);
+    }
+
   </style>
 </head>
 
